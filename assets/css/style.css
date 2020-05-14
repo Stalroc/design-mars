@@ -1,0 +1,327 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --grey: #92a1a5;
+    --red: #ff343d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grey);
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    line-height: 2.25em;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    color: var(--black);
+}
+
+h1{
+    font-size: 92px;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container{
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.btn{
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.red{
+    color: var(--red);
+}
+
+/*Navbar*/
+.navbar{
+    z-index: 99;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav a{
+    padding: 0 15px;
+}
+
+.navbar .phone{
+    color: var(--grey);
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.logo-phone{
+    margin-right: 10px;
+}
+
+.phone{
+    margin-left: 40px;
+}
+
+.nav-right a{
+    color: var(--white);
+}
+
+.buy-now{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/*Banner*/
+.banner{
+    height: 100vh;
+    padding: 65px 0;
+    background-color: #eff2f6;
+    position: relative;
+}
+
+.content-banner{
+    padding: 0 40px;
+}
+
+.present-product h2{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.present-product{
+    max-width: 500px;
+    padding-bottom: 175px;
+    display: flex;
+}
+
+.banner .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.point{
+    background-color: #e1e1e1;
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.point:last-child{
+    margin-bottom: 0;
+}
+
+.point-active{
+    background-color: var(--red);
+}
+
+.present-product-text{
+    margin-left: 70px;
+}
+
+.scrolldown{
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--black);
+    writing-mode: vertical-lr;
+}
+
+.banner-red-part{
+    background-color: var(--red);
+    width: 35%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-drone{
+    transform: translateX(-50%);
+}
+
+/*Tap to fly*/
+
+
+/*Features*/
+.features{
+    padding: 130px 0;
+    text-align: center;
+}
+
+.content-features h3{
+    margin-bottom: 115px;
+}
+
+.display-features{
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature{
+    width: 25%;
+}
+
+.title-feature{
+    margin-top: 70px;
+    display: block;
+    font-size: 30px;
+    color: var(--black);
+}
+
+/*Generation vision*/
+.generation-vision{
+    display: flex;
+}
+
+.content-generation-vision{
+    background-color: #232323;
+    width: 55%;
+    background-image: url('../img/bg-drone.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.content-generation-vision h1{
+    font-weight: 600;
+    color: var(--white);
+}
+
+.content-generation-vision button{
+    border: 2px solid #3b3b3b;
+    background-color: transparent;
+    color: var(--white);
+    margin-top: 35px;
+}
+
+/*Generation flying*/
+.generation-flying{
+    position: relative;
+}
+
+.content-generation-flying{
+    max-width: 770px;
+    padding: 200px 0;
+}
+
+.content-generation-flying .content-text{
+    padding-top: 100px;
+}
+
+.content-generation-flying h1{
+    font-weight: 600;
+    color: #232323;
+}
+
+.content-generation-flying button{
+    border: 2px solid #eff2f6;
+    background-color: transparent;
+    margin-top: 75px;
+}
+
+.generation-flying-drone{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/*Start joruney*/
+.start-journey{
+    padding: 775px 0 200px 0;
+    background-image: url('../img/bg-sea.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.content-start-journey h1{
+    color: var(--white);
+}
+
+.content-start-journey button{
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    margin-top: 75px;
+    color: #318f76;
+}
+
+/*Footer*/
+footer{
+    padding: 200px 0;
+    text-align: center;
+}
+
+.content-footer span{
+    margin-top: 30px;
+    display: block;
+}
